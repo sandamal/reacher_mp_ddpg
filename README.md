@@ -39,9 +39,10 @@ The barrier for solving the second version of the environment is slightly differ
 
 The environment is considered solved, when the average (over 100 episodes) of those average scores is at least +30. 
 
-### Getting Started
+### Installation instructions
+1. Follow the instructions in this [link](https://github.com/udacity/deep-reinforcement-learning#dependencies) to setup Python and install the required dependencies.
 
-1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+2. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
 
     - **_Version 1: One (1) Agent_**
         - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
@@ -59,11 +60,10 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux_NoVis.zip) (version 1) or [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip) (version 2) to obtain the "headless" version of the environment.  You will **not** be able to watch the agent without enabling a virtual screen, but you will be able to train the agent.  (_To watch the agent, you should follow the instructions to [enable a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above._)
 
-2. Place the file in project folder, and unzip (or decompress) the file. Make sure the following line in the **`Continuous_Control_final.ipynb`** points to the correct location.
+3. Place the file in project folder, and unzip (or decompress) the file. Make sure the following line in the **`Continuous_Control_final.ipynb`** points to the correct location.
     ```python
     env = UnityEnvironment(file_name='./Reacher_Linux_NoVis/Reacher.x86_64')
     ```
-3. Follow the instructions in this [link](https://github.com/udacity/deep-reinforcement-learning#dependencies) to install the required dependencies.
 
 ### Instructions
 In this project, we solve the environment version with the 20 agents using an implementation of DDPG.
